@@ -1,0 +1,70 @@
+Tests
+
+Test 1 for simple addition - "1,2,5"
+// From PDF -> 1 - d
+Test 1 - Case 1 : 
+Input  : 1,2,5
+Output : Final Addition is : 8
+
+
+Test 2 for empty addition case 1 - ""
+// From PDF -> 1 - b
+Input  : ""
+Output : Final Addition is : 0
+
+Test 2 for empty addition case 2 - "0"
+// From PDF -> 1 - b
+Input  : 0
+Output : Final Addition is : 0
+
+Test 3 to handle new lines in addition case 1 - "1\n,2,3"
+// From PDF -> 2 - a
+Input  : 1\n,2,3
+Output : Final Addition is : 6
+
+Test 3 to handle new lines in addition case 2 - "0"
+// From PDF -> 2 - b
+Input  : 1,\n2,4
+Output : Final Addition is : 7
+
+CUSTOM DELIMITER
+// CASE 1
+// From PDF -> 3 - c
+Input  : //;\n1;3;4
+Output : Final Addition is : 8
+
+// CASE 2
+// From PDF -> 3 - e -i
+Input  : //$\n1$2$3
+Output : Final Addition is : 6
+
+// CASE 3
+// From PDF -> 3 - e -ii
+Input  : //@\n2@3@8
+Output : Final Addition is : 13
+
+// Test 5 - CASE 1 -- Negative numbers
+// From PDF -> 4
+Input  : -3,-5,2
+Output : Negatives not allowed. : -3,-5
+
+// Test 6 CASE 1 -- Ignore number larger than 1000
+// From PDF -> Bonus 1
+Input  : 1,1001,2000,200
+Output : Final Addition is : 201
+
+// BONUS
+// From PDF -> Bonus 2
+Input  : //###\n2###3###8
+Output : Final Addition is : 13
+
+Input  : //***\n1***2***3
+Output : Final Addition is : 6
+
+// From PDF -> Bonus 3
+Input  : //$,@\n1$2@3
+Output : Final Addition is : 6
+
+// From PDF -> Bonus 4
+Input  : //$$,@@\n1$$3@@5
+Output : Final Addition is : 9
